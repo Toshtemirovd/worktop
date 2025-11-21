@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@layer components {
+  .custom-text {
+    @apply text-[16px] leading-[100%] tracking-[0%] hover:text-[#1DBF73] transition duration-[300ms];
+  }
+}
+
+@layer components {
+  .header-btn{
+    @apply text-[#222222] text-[14px] leading-[100%] border-[#F2F0FE] border pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[50px] hover:text-[#1DBF73] hover:transition duration-[300ms] hover:border-[#1DBF73] cursor-pointer ;
+  }
+}
+
+@layer components {
+  .works{
+   @apply pt-[12px] pr-[145px] pb-[12px] pl-[146px] hover:bg-[#1DBF73] hover:text-[#F6FAFD] hover:cursor-pointer hover:transition-[300ms] text-[#1DBF73] border border-[#1DBF73] mt-[30px] rounded-[50px];
+  }
+}
+@layer components{
+  .footer-bg{
+    background-image: url(../assets/imgs/footer-bg.png);
+  }
+}

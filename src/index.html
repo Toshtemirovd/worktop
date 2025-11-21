@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Belleza&family=Clicker+Script&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body class="font-[Montserrat]">
+  <header class="bg-[#F7F6FF] relative">
+    <!-- navbar section start -->
+    <div class="fixed z-[999] left-1/2 -translate-x-1/2 bg-green-100 w-[100%] mt-[0]">
+      <nav class="max-w-[1320px] m-auto flex justify-between items-center pt-[30px] pb-[30px]">
+        <div>
+          <a href="index.html">
+            <img src="../assets/icons/logo.svg" alt="logo">
+          </a>
+        </div>
+        <!-- navbar list section -->
+        <ul class="flex justify-between items-center gap-[40px]">
+          <li class="custom-text">
+            <a href="index.html">
+              <span>Биржа</span>
+            </a>
+          </li>
+          <li class="custom-text">
+            <a href="index.html">
+              <span>Ворки</span>
+            </a>
+          </li>
+          <li class="custom-text">
+            <a href="index.html">
+              <span>Конкурсы</span>
+            </a>
+          </li>
+          <li class="custom-text">
+            <a href="index.html">
+              <span>Создать ворк</span>
+            </a>
+          </li>
+          <li class="custom-text">
+            <a href="index.html">
+              <span>Создать заказ</span>
+            </a>
+          </li>
+        </ul>
+        <!-- navbar contac section -->
+        <div class="flex items-center gap-[30px]">
+          <div><button type="submit"
+              class="text-center text-[16px] font-semibold leading-[100%] text-[#1DBF73] pt-[10px] pr-[30px] pb-[10px] pl-[30px] bg-[#F2F0FE] rounded-[50px] hover:bg-[#1DBF73] hover:transition duration-[300ms] hover:text-[#F6FAFD] hover:cursor-pointer">Регистрация</button>
+          </div>
+          <div><button type="submit"
+              class="text-[16px] leading-[100%] font-semibold text-[#F6FAFD] pt-[10px] pl-[30px] pr-[30px] pb-[10px] bg-[#1DBF73] rounded-[50px] hover:bg-[#F2F0FE] hover:transition duration-[300ms] hover:text-[#1DBF73] hover:cursor-pointer text-center font">Войти</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="flex max-w-[1320px] m-auto relative">
+      <!-- header button section -->
+      <div class="max-w-[1320px] m-auto ml-[0]">
+        <div>
+          <h1 class=" pt-[230px] text-[36px] leading-[100%] tracking-[5%] font-bold text-[#222222]">
+            Покупайте фриланс-услуги <br>
+            в <span class="text-[#1DBF73]">два клика</span>
+          </h1>
+          <p class="text-[20px] leading-[100%] font-medium text-[#222222] pt-[30px]">
+            Ворк — единица работы продавца, которую <br>
+            можно купить как товар в магазине
+          </p>
+          <div class="bg-[#F2F0FE] max-w-[532px] flex justify-between rounded-[50px] mt-[50px] text-[#656084]">
+            <input class="w-[70%] outline-none text-[16px] font-medium leading-[100%] pl-[19px]" type="text"
+              placeholder="Что нужно сделать?">
+            <a href="index.html">
+              <button type="submit"
+                class="bg-[#FBA457] rounded-[50px] border-[3px] border-[#F2F0FE] text-[16px] font-semibold leading-[100%] text-[#F6FAFD] pt-5 pl-[50px] pb-5 pr-[49px] cursor-pointer hover:bg-orange-300 hover:transition duration-[300ms]">Найти</button>
+            </a>
+          </div>
+          <p class="pt-[50px] font-medium leading-[100%] text-[16px] text-[#222222]">Выберите рубрику, чтобы начать</p>
+          <div>
+            <div class="items-center flex gap-[20px] mt-[30px]">
+              <a href="index.html">
+                <button type="submit"
+                  class="border-[#1DBF73] border rounded-[50px] text-[#1DBF73] cursor-pointer text-[14px] leading-[100%] font-medium pt-[10px] pl-[20px] pb-[10px] pr-[20px] hover:text-[#FBA457] hover:border-[#FBA457] hover:transition duration-[300ms]">Дизайн</button>
+              </a>
+              <a href="index.html">
+                <button type="submit"
+                  class="text-[#222222] text-[14px] leading-[100%] border-[#F2F0FE] border pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[50px] hover:text-[#1DBF73] hover:transition duration-[300ms] hover:border-[#1DBF73] cursor-pointer ">Дизайн
+                  сайтов</button>
+              </a>
+              <a href="index.html">
+                <button type="submit" class="header-btn">Дизайн логотипа</button>
+              </a>
+            </div>
+            <div class="items-center flex gap-[20px] mt-[20px]">
+              <a href="index.html">
+                <button type="submit" class="header-btn">Дизайн визиток</button>
+              </a>
+              <a href="index.html">
+                <button type="submit" class="header-btn">Арт и иллюстрации</button>
+              </a>
+              <a href="index.html">
+                <button type="submit" class="header-btn">Флаера и брошюры</button>
+              </a>
+            </div>
+            <div class="items-center flex gap-[20px] mt-[20px] mb-[153px] ">
+              <a href="index.html">
+                <button type="submit" class="header-btn">Баннеры и стенды</button>
+              </a>
+              <a href="index.html">
+                <button type="submit" class="header-btn">Дизайн презентации</button>
+              </a>
+              <a href="index.html">
+                <button type="submit"
+                  class="border-[#FBA457] border rounded-[50px] text-[#FBA457] cursor-pointer text-[14px] leading-[100%] font-medium pt-[10px] pl-[20px] pb-[10px] pr-[20px] hover:text-[#1DBF73] hover:border-[#1DBF73] hover:transition duration-[300ms]">Все
+                  подкатегории</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header imgs section -->
+      <div>
+        <div class="mt-[164px] mr-[0]">
+          <img src="../assets/imgs/header-bg.png" alt="bgc">
+        </div>
+        <div class="absolute top-[318px] right-[494px]">
+          <img src="../assets/imgs/star-1.png" alt="star">
+        </div>
+        <div class=" absolute top-[747px]">
+          <img src="../assets/imgs/dod.png" alt="dod">
+        </div>
+        <div class="absolute top-[710px] right-[32.5px]">
+          <img src="../assets/imgs/wave.png" alt="wave">
+        </div>
+        <div class="absolute top-[158px]">
+          <img src="../assets/imgs/Ellipse.png" alt="allips">
+        </div>
+        <div class="absolute top-[352px] right-[27px]">
+          <img src="../assets/imgs/border-pz.png" alt="border">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Trending works section start -->
+    <section>
+      <div class="max-w-[1320px] m-auto">
+        <p class="pt-[120px] text-[24px] leading-[100%] tracking-[2%] font-medium text-[#222222]  mb-[48px]">Актуальные
+          ворки</p>
+        <div class="grid grid-cols-[repeat(3,3fr)] gap-[30px]">
+          <div
+            class="border border-[#F2F0FE] max-w-[420px] rounded-[20px] hover:scale-105 hover:transition-[500ms] hover:shadow-[0px 16px 16px 0px #2222220A]">
+            <div class="m-[20px]">
+              <div class="flex gap-[20px]">
+                <img src="../assets/imgs/luse.png" alt="luse">
+                <h3 class="text-[18px] leading-[100%] text-[#222222] font-medium">
+                  Сделать дизайн <br>
+                  интернет-магазина
+                </h3>
+              </div>
+              <p class="mt-[30px] text-[#222222] text-[14px] leading-[100%] font-Montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                elit. Aliquam sed leo at hendrerit dictum diam, enim. <br>
+                Dolor in imperdiet ultrices mauris. Est vitae vulputate <br>
+                est nec cras. Turpis nunc ornare nulla neque, <br>
+                interdum. At pharetra consectetur nec est convallis...
+              </p>
+              <a href="index.html">
+                <button type="submit"
+                  class="pt-[12px] pr-[145px] pb-[12px] pl-[146px] hover:bg-[#1DBF73] hover:text-[#F6FAFD] hover:cursor-pointer hover:transition-[300ms] text-[#1DBF73] border border-[#1DBF73] mt-[30px] rounded-[50px]">Посмотреть</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#F2F0FE] max-w-[420px] rounded-[20px] hover:scale-105 hover:transition-[500ms] hover:shadow-[0px 16px 16px 0px #2222220A]">
+            <div class="m-[20px]">
+              <div class="flex gap-[20px]">
+                <img src="../assets/imgs/Верстка-landing-page.png" alt="luse">
+                <h3 class="text-[18px] leading-[100%] text-[#222222] font-medium">
+                  Сделать дизайн <br>
+                  интернет-магазина
+                </h3>
+              </div>
+              <p class="mt-[30px] text-[#222222] text-[14px] leading-[100%] font-Montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                elit. Aliquam sed leo at hendrerit dictum diam, enim. <br>
+                Dolor in imperdiet ultrices mauris. Est vitae vulputate <br>
+                est nec cras. Turpis nunc ornare nulla neque, <br>
+                interdum. At pharetra consectetur nec est convallis...
+              </p>
+              <a href="index.html">
+                <button type="submit"
+                  class="pt-[12px] pr-[145px] pb-[12px] pl-[146px] hover:bg-[#1DBF73] hover:text-[#F6FAFD] hover:cursor-pointer hover:transition-[300ms] text-[#1DBF73] border border-[#1DBF73] mt-[30px] rounded-[50px]">Посмотреть</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#F2F0FE] max-w-[420px] rounded-[20px] hover:scale-105 hover:transition-[500ms] hover:shadow-[0px 16px 16px 0px #2222220A]">
+            <div class="m-[20px]">
+              <div class="flex gap-[20px]">
+                <img src="../assets/imgs/Сделать.png" alt="luse">
+                <h3 class="text-[18px] leading-[100%] text-[#222222] font-medium">
+                  Сделать дизайн <br>
+                  интернет-магазина
+                </h3>
+              </div>
+              <p class="mt-[30px] text-[#222222] text-[14px] leading-[100%] font-Montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                elit. Aliquam sed leo at hendrerit dictum diam, enim. <br>
+                Dolor in imperdiet ultrices mauris. Est vitae vulputate <br>
+                est nec cras. Turpis nunc ornare nulla neque, <br>
+                interdum. At pharetra consectetur nec est convallis...
+              </p>
+              <a href="index.html">
+                <button type="submit"
+                  class="pt-[12px] pr-[145px] pb-[12px] pl-[146px] hover:bg-[#1DBF73] hover:text-[#F6FAFD] hover:cursor-pointer hover:transition-[300ms] text-[#1DBF73] border border-[#1DBF73] mt-[30px] rounded-[50px]">Посмотреть</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#F2F0FE] max-w-[420px] rounded-[20px] hover:scale-105 hover:transition-[500ms] hover:shadow-[0px 16px 16px 0px #2222220A]">
+            <div class="m-[20px]">
+              <div class="flex gap-[20px]">
+                <img src="../assets/imgs/Продвижение-in.png" alt="luse">
+                <h3 class="text-[18px] leading-[100%] text-[#222222] font-medium">
+                  Сделать дизайн <br>
+                  интернет-магазина
+                </h3>
+              </div>
+              <p class="mt-[30px] text-[#222222] text-[14px] leading-[100%] font-Montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                elit. Aliquam sed leo at hendrerit dictum diam, enim. <br>
+                Dolor in imperdiet ultrices mauris. Est vitae vulputate <br>
+                est nec cras. Turpis nunc ornare nulla neque, <br>
+                interdum. At pharetra consectetur nec est convallis...
+              </p>
+              <a href="index.html">
+                <button type="submit"
+                  class="pt-[12px] pr-[145px] pb-[12px] pl-[146px] hover:bg-[#1DBF73] hover:text-[#F6FAFD] hover:cursor-pointer hover:transition-[300ms] text-[#1DBF73] border border-[#1DBF73] mt-[30px] rounded-[50px]">Посмотреть</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#F2F0FE] max-w-[420px] rounded-[20px] hover:scale-105 hover:transition-[500ms] hover:shadow-[0px 16px 16px 0px #2222220A]  ">
+            <div class="m-[20px]">
+              <div class="flex gap-[20px]">
+                <img src="../assets/imgs/Ellipse 54 (1).png" alt="luse">
+                <h3 class="text-[18px] leading-[100%] text-[#222222] font-medium">
+                  Сделать дизайн <br>
+                  интернет-магазина
+                </h3>
+              </div>
+              <p class="mt-[30px] text-[#222222] text-[14px] leading-[100%] font-Montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                elit. Aliquam sed leo at hendrerit dictum diam, enim. <br>
+                Dolor in imperdiet ultrices mauris. Est vitae vulputate <br>
+                est nec cras. Turpis nunc ornare nulla neque, <br>
+                interdum. At pharetra consectetur nec est convallis...
+              </p>
+              <a href="index.html">
+                <button type="submit"
+                  class="pt-[12px] pr-[145px] pb-[12px] pl-[146px] hover:bg-[#1DBF73] hover:text-[#F6FAFD] hover:cursor-pointer hover:transition-[300ms] text-[#1DBF73] border border-[#1DBF73] mt-[30px] rounded-[50px]">Посмотреть</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="max-w-[420px] rounded-[20px] bg-[#F2F0FE] hover:scale-105 hover:transition-[500ms] hover:shadow-[0px 16px 16px 0px #2222220A]">
+            <p class="text-[#1DBF73] text-[18px] pt-[124px] pl-[113px] pb-[124px] pr-[113px]"><a
+                href="index.html">Смотреть все ворки</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top freelancers section star -->
+    <section>
+      <div class="max-w-[1320px]  m-auto mt-[100px]">
+        <h2 class="pb-[40px] text-[24px] leading-[100%] tracking-[2%] text-[#222222]">Топ фрилансеров</h2>
+        <div class=" grid grid-cols-[repeat(3,2fr)] gap-[30px]">
+          <div class="rounded-[20px] border border-[#F2F0FE] max-w-[420px] hover:scale-105 transition-[500ms]">
+            <div class="flex gap-[32.5px] items-center m-[20px]">
+              <div>
+                <img src="../assets/imgs/Марина-Королёва.png" alt="Марина-Королёва">
+              </div>
+              <div>
+                <p class="text-[#000000] text-[16px] leading-[100%] font-medium ">Марина Королёва</p>
+                <p class="text-[#FBA457] text-[18px] leading-[100%] pt-[12px] pb-[10px] ">Разработчик PHP</p>
+                <p class="text-[#000000] text-[14px] leading-[100%] font-medium ">Выполено проектов: 65</p>
+                <img class="mt-[10px]" src="../assets/imgs/stars.png" alt="stars">
+              </div>
+            </div>
+            <a href="index.html">
+              <button
+                class="text-[#1DBF73] text-[14px] leading-[100%] font-medium border border-[#1DBF73] pt-[12px] pb-[12px] pl-[147.5px] pr-[161.5px] rounded-[100px] ml-[20px] mr-[20px] mt-[10px] mb-[20px] hover:text-[#FFFFFF] hover:bg-[#1DBF73] hover:cursor-pointer hover:transition-[300ms]"
+                type="submit">Написать</button>
+            </a>
+          </div>
+
+          <div class="rounded-[20px] border border-[#F2F0FE] max-w-[420px] hover:scale-105 transition-[500ms]">
+            <div class="flex gap-[32.5px] items-center m-[20px]">
+              <div>
+                <img src="../assets/imgs/Семён-Сергеев.png" alt="Марина-Королёва">
+              </div>
+              <div>
+                <p class="text-[#000000] text-[16px] leading-[100%] font-medium ">Марина Королёва</p>
+                <p class="text-[#FBA457] text-[18px] leading-[100%] pt-[12px] pb-[10px] ">Разработчик PHP</p>
+                <p class="text-[#000000] text-[14px] leading-[100%] font-medium ">Выполено проектов: 104</p>
+                <img class="mt-[10px]" src="../assets/imgs/stars.png" alt="stars">
+              </div>
+            </div>
+            <a href="index.html">
+              <button
+                class="text-[#1DBF73] text-[14px] leading-[100%] font-medium border border-[#1DBF73] pt-[12px] pb-[12px] pl-[147.5px] pr-[161.5px] rounded-[100px] ml-[20px] mr-[20px] mt-[10px] mb-[20px] hover:text-[#FFFFFF] hover:bg-[#1DBF73] hover:cursor-pointer hover:transition-[300ms]"
+                type="submit">Написать</button>
+            </a>
+          </div>
+
+          <div class="rounded-[20px] border border-[#F2F0FE] max-w-[420px] hover:scale-105 transition-[500ms]">
+            <div class="flex gap-[32.5px] items-center m-[20px]">
+              <div>
+                <img src="../assets/imgs/Ангелина-Сорокина.png" alt="Марина-Королёва">
+              </div>
+              <div>
+                <p class="text-[#000000] text-[16px] leading-[100%] font-medium ">Марина Королёва</p>
+                <p class="text-[#FBA457] text-[18px] leading-[100%] pt-[12px] pb-[10px] ">Разработчик PHP</p>
+                <p class="text-[#000000] text-[14px] leading-[100%] font-medium ">Выполено проектов: 25</p>
+                <img class="mt-[10px]" src="../assets/imgs/stars.png" alt="stars">
+              </div>
+            </div>
+            <a href="index.html">
+              <button
+                class="text-[#1DBF73] text-[14px] leading-[100%] font-medium border border-[#1DBF73] pt-[12px] pb-[12px] pl-[147.5px] pr-[161.5px] rounded-[100px] ml-[20px] mr-[20px] mt-[10px] mb-[20px] hover:text-[#FFFFFF] hover:bg-[#1DBF73] hover:cursor-pointer hover:transition-[300ms]"
+                type="submit">Написать</button>
+            </a>
+          </div>
+
+          <div class="rounded-[20px] border border-[#F2F0FE] max-w-[420px] hover:scale-105 transition-[500ms]">
+            <div class="flex gap-[32.5px] items-center m-[20px]">
+              <div>
+                <img src="../assets/imgs/Никит- Зайцев.png" alt="Марина-Королёва">
+              </div>
+              <div>
+                <p class="text-[#000000] text-[16px] leading-[100%] font-medium ">Марина Королёва</p>
+                <p class="text-[#FBA457] text-[18px] leading-[100%] pt-[12px] pb-[10px] ">Разработчик PHP</p>
+                <p class="text-[#000000] text-[14px] leading-[100%] font-medium ">Выполено проектов: 144</p>
+                <img class="mt-[10px]" src="../assets/imgs/stars.png" alt="stars">
+              </div>
+            </div>
+            <a href="index.html">
+              <button
+                class="text-[#1DBF73] text-[14px] leading-[100%] font-medium border border-[#1DBF73] pt-[12px] pb-[12px] pl-[147.5px] pr-[161.5px] rounded-[100px] ml-[20px] mr-[20px] mt-[10px] mb-[20px] hover:text-[#FFFFFF] hover:bg-[#1DBF73] hover:cursor-pointer hover:transition-[300ms]"
+                type="submit">Написать</button>
+            </a>
+          </div>
+
+          <div class="rounded-[20px] border border-[#F2F0FE] max-w-[420px] hover:scale-105 transition-[500ms]">
+            <div class="flex gap-[32.5px] items-center m-[20px]">
+              <div>
+                <img src="../assets/imgs/Наталья-Захарова.png" alt="Марина-Королёва">
+              </div>
+              <div>
+                <p class="text-[#000000] text-[16px] leading-[100%] font-medium ">Марина Королёва</p>
+                <p class="text-[#FBA457] text-[18px] leading-[100%] pt-[12px] pb-[10px] ">Разработчик PHP</p>
+                <p class="text-[#000000] text-[14px] leading-[100%] font-medium ">Выполено проектов: 75</p>
+                <img class="mt-[10px]" src="../assets/imgs/stars.png" alt="stars">
+              </div>
+            </div>
+            <a href="index.html">
+              <button
+                class="text-[#1DBF73] text-[14px] leading-[100%] font-medium border border-[#1DBF73] pt-[12px] pb-[12px] pl-[147.5px] pr-[161.5px] rounded-[100px] ml-[20px] mr-[20px] mt-[10px] mb-[20px] hover:text-[#FFFFFF] hover:bg-[#1DBF73] hover:cursor-pointer hover:transition-[300ms]"
+                type="submit">Написать</button>
+            </a>
+          </div>
+          <div class="bg-[#F2F0FE] rounded-[20px] max-w-[420px] hover:scale-105 transition-[500ms]">
+
+            <div class="text-[#1DBF73] text-[18px] leading-[100%] font-medium pt-[119.5px] pr-[37px] pb-[119.5px]
+              pl-[37px]">
+              <span class="hover:cursor-pointer ">Посмотреть всех ТОП фрилансеров</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How to solve tasks on WorkTap? section -->
+    <section>
+      <div class="max-w-[1320px] m-auto pt-[100px] font-medium">
+        <h2 class="text-[#222222] text-[24px] leading-[100%] rounded-[2%]">Как решать задачи на WorkTap?</h2>
+        <p class="text-[#222222] text-[16px] leading-[100%] pt-[20px]">Идеально подходит для бизнеса и частных лиц</p>
+        <div class="mt-[50px] flex justify-between">
+
+          <div class=" max-w-[389px]">
+            <img src="../assets/imgs/Выберите-услугу.png" alt="">
+            <h3 class="text-[#222222] text-[18px] leading-[100%] font-medium pt-[19.46px]">Выберите услугу</h3>
+            <p class="text-[#222222] pt-[20px] text-[14px]">
+              В супермаркете WorkTap представлен
+              широкий <br> выбор услуг от квалифицированных специалистов.
+            </p>
+          </div>
+
+          <div class=" max-w-[389px]">
+            <img src="../assets/imgs/Оплатите.png" alt="">
+            <h3 class="text-[#222222] text-[18px] leading-[100%] font-medium pt-[19.46px]">Выберите услугу</h3>
+            <p class="text-[#222222] pt-[20px] text-[14px]">
+              В супермаркете WorkTap представлен
+              широкий <br> выбор услуг от квалифицированных специалистов.
+            </p>
+          </div>
+
+          <div class=" max-w-[389px]">
+            <img src="../assets/imgs/Получите-результат.png" alt="">
+            <h3 class="text-[#222222] text-[18px] leading-[100%] font-medium pt-[19.46px]">Выберите услугу</h3>
+            <p class="text-[#222222] pt-[20px] text-[14px]">
+              В супермаркете WorkTap представлен
+              широкий <br> выбор услуг от квалифицированных специалистов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section>
+      <div class="max-w-[1320px] m-auto flex justify-between">
+        <div>
+          <h2 class="text-[#222222] text-[24px] leading-[100%] font-semibold pt-[100px] pb-[30px]">Топ категории</h2>
+          <ul>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Тексты
+                  и переводы</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Разработка</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Дизайн</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Аудио,
+                  видео монтаж</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Соцсети
+                  и реклама</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px]">SEO
+                  и оптимизация</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-[#222222] text-[24px] leading-[100%] font-semibold pt-[100px] pb-[30px]">О Проекте</h2>
+          <ul>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">
+                  О Нас</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Как Это Работает</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Политика Приватности</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">
+                  Правила Пользования </span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">
+                  Пресса о нас</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-[#222222] text-[24px] leading-[100%] font-semibold pt-[100px] pb-[30px]">Поддержка</h2>
+          <ul>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">
+                  Контакты</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">Политика Безопасности</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span
+                  class="text-[#222222] text-[14px] leading-[100%] hover:text-[#1DBF73] hover:transition-[300ms] pt-[10px] block">FAQ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
